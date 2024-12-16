@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
+
 }
 .nav-items {
   display: flex;
@@ -94,7 +96,6 @@ body {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
-  
 }
 .card img:hover {
   transform: scale(1.1);
@@ -149,13 +150,55 @@ footer {
   margin: 0;
 }
 .blink {
-    animation: blinker 1.5s linear infinite;
-    color: red;
-    font-family: sans-serif;
+  animation: blinker 1.5s linear infinite;
+  color: red;
+  font-family: sans-serif;
 }
 
 @keyframes blinker {
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
+}
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.login-container h2 {
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #047bd5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(orange, red);
 }

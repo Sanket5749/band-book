@@ -12,9 +12,9 @@
       <div class="focus"></div>
       <div class="web-name">Band-Book</div>
       <div class="search-bar">
-        <input type="text" placeholder="Search Band for Booking" />
+        <input type="text" placeholder="Search Band for Booking" id="searchInput" onkeyup="searchBands()"/>
       </div>
-      <div class="login"><button>Login</button></div>
+      <div class="login"><button onclick="navigateToLogin()">Login</button></div>
       <div class="dropdown">
         More
         <select>
@@ -119,5 +119,6 @@
       <div class="footer-bottom"> 
         <p>&copy; 2024 Band Book. All rights reserved.</p>
       </div>
+      <script src="app.js"></script>
   </body>
 </html>
